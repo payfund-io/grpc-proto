@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package identificationService.v1;
+
+service IdentificationService{
+    rpc SignUp(CreateUserDTO) returns (SignUpResponse){}
+    rpc SignIn(SignInUserDTO) returns (SignInResponse){}
+}
+
+message CreateUserDTO{
+    string email = 1;
+    string password = 2;
+    phone_number = 3;
+}
+
+message SignUpResponse{
+  string id = 1;
+  string email = 2;
+  string username = 3;
+}
+
+message SignInUserDTO{
+    string email = 1;
+    string password = 2;
+    phone_number = 3;
+}
+
+message SignInResponse{
+  string id = 1;
+  string email = 2;
+  string username = 3;
+}
+
