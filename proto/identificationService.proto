@@ -3,11 +3,11 @@ syntax = "proto3";
 package identificationService.v1;
 
 service IdentificationService{
-    rpc SignUp(CreateUserDTO) returns (SignUpResponse){}
+    rpc SignUp(SignUpUserDTO) returns (SignUpResponse){}
     rpc SignIn(SignInUserDTO) returns (SignInResponse){}
 }
 
-message CreateUserDTO{
+message SignUpUserDTO{
     string email = 1;
     string password = 2;
     phone_number = 3;
