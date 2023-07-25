@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package identification-service.v1;
+package identificationService.v1;
 
 service IdentificationService{
     rpc SignUp(SignUpUserDTO) returns (SignUpResponse){}

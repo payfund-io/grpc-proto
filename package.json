@@ -1,6 +1,6 @@
 {
   "name": "@payfund/grpc-proto",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A shared library for interacting with various microservices",
   "main": "index.js",
   "scripts": {
