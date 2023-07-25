@@ -10,7 +10,7 @@ service IdentificationService{
 message SignUpUserDTO{
     string email = 1;
     string password = 2;
-    phone_number = 3;
+    string phone_number = 3;
 }
 
 message SignUpResponse{
@@ -22,7 +22,7 @@ message SignUpResponse{
 message SignInUserDTO{
     string email = 1;
     string password = 2;
-    phone_number = 3;
+    string phone_number = 3;
 }
 
 message SignInResponse{
